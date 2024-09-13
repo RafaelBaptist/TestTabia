@@ -23,7 +23,7 @@ function App() {
 
         <div className="App__MainView">
           <div className="App__MainView__Header">
-            <h2> Comparison</h2>
+            <h2>Comparison</h2>
             <button className="TableButton">
               <img src={downloadIcon} alt="ddd" />
               Export
