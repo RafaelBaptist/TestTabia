@@ -2,46 +2,43 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* overflow-x: hidden;
-  overflow-y: auto; */
-  overflow: hidden;
-  
 }
 
-.App__Body{
-
+.AppBody{
   display: flex;
   flex: 1;
- 
+  flex-direction: row;
 
 }
 
-.App__MainView {
+.AppMainView {
+  display: flex;
   flex: 1;
+  width: 100%;
   background-color: #F8F8F8;
- 
-  overflow: hidden;
-
-  
-  
-  
+ overflow-x: hidden;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 
 }
-.App__MainView__Table{
-  margin: 0 auto; /* Centers horizontally */
-  width: fit-content;
-}
-
-.App__MainView__Header {
+.AppMainViewTable{
   display: flex;
-  justify-content: space-between;
-  margin-left:  128px;
-  margin-right: 16px;
+  flex: 1;
+    width: 100%;
 
-  
 }
 
-.App__TopBar{ 
+.AppMainViewHeader {
+  display: flex;
+width: 96%;
+  justify-content: space-between;
+  flex-direction: row;
+
+
+}
+
+.AppTopBar{ 
   z-index: 2;
  
 }
@@ -54,60 +51,35 @@
   border: 1px solid #BFC7D0;
   gap: 10px;
   padding: 6px 16px 6px 16px;
-  margin-right: 64px;
   margin-top: 24px;
   font-size: 14px;
   font-weight: 600;
   color: #62656C;
-
-
-  
-  
  }
  .TableButton img {
   max-width: 24px;
   max-height: 24px;
   margin-right: 8px;
- 
-  
 
  }
 
  .TableButton:hover{
-  background-color:rgba(0, 0, 0, 0.05);
-  transition: 1.3s;
+  background-color:rgba(0, 0, 0, 0.08);
+  transition: 0.6s;
   border-radius: 4px;
- 
   border: 1px solid #BFC7D0;
   gap: 10px;
   padding: 6px 16px 6px 16px;
-  margin-right: 32px;
   margin-top: 24px;
   font-size: 14px;
   font-weight: 600;
   color:#62656C;
   ;
-  
+
  }
 
 
- @media (min-width: 768px) {
-  .TableButton {
-    width: auto; 
-    font-size: 1.2rem;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #BFC7D0;
-    gap: 10px;
-    padding: 6px 16px 6px 16px;
-    margin-right: 32px;
-    margin-top: 24px;
-    font-size: 14px;
-    font-weight: 600;
-    color:#62656C;
-    
-  }
-}
+
 
 /* cellphone */
 @media (max-width: 767px) {
@@ -121,7 +93,7 @@
 
 .TableButton img{
   display: none;
-  
+
 
 }
 .TableButton:hover { 
@@ -130,11 +102,40 @@
 }
 
 
-.App__MainView__Header{
+.AppMainView__Header{
   margin: 0 auto; /* Centers horizontally */
   width: fit-content;
   padding-left: 0;
   gap: 25%;
+
 }
+
+.TableButton {
+  width: auto; 
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #BFC7D0;
+  gap: 10px;
+  padding: 6px 16px 6px 16px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color:#62656C;
+
+}
+.TableButton:hover{
+  background-color:rgba(0, 0, 0, 0.05);
+  transition: 1.3s;
+  border-radius: 4px;
+  border: 1px solid #BFC7D0;
+  gap: 10px;
+  padding: 6px 16px 6px 16px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color:#62656C;
+    }
+
 
 }

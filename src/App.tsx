@@ -14,15 +14,15 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App__TopBar">
+      <div className="AppTopBar">
         <TopBar active={showSidebar} handleSidebar={handleSidebar} />
       </div>
 
-      <div className="App__Body">
+      <div className="AppBody">
         <SideBar show={showSidebar} />
 
-        <div className="App__MainView">
-          <div className="App__MainView__Header">
+        <div className="AppMainView">
+          <div className="AppMainViewHeader">
             <h2>Comparison</h2>
             <button className="TableButton">
               <img src={downloadIcon} alt="ddd" />
@@ -30,7 +30,7 @@ function App() {
             </button>
           </div>
 
-          <div className="App__MainView__Table">
+          <div className="AppMainViewTable">
             <Table />
           </div>
         </div>

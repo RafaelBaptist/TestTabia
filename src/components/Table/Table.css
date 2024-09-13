@@ -1,36 +1,35 @@
 .ContainerTable {
   background-color: #F8F8F8;
-  margin: 0 5vw 0 5vw;
+  width: 100%;
+  flex: 1;
+  padding: 0px 32px;
+
 }
 
 .Table {
-  overflow: auto;
-  background-color: white;
-  border: 40px white solid;
-  padding: 0;
-  width: 100%;
+  background-color: #FFF;
+  flex: 1;
+  padding: 20px;
   display: flex;
   justify-content: center;
-
   table-layout: fixed;
-
 }
 
+
 .TableHead {
- 
   padding: 0;
   width: 100%; 
 }
 
 .Table th, .Table td {
   padding: 10px; 
-  
+
   box-sizing: border-box;
   flex: 1;
 }
 
 table th:first-child {
-  
+
   text-align: left; 
   padding-left: 10px; 
   vertical-align: bottom; 
@@ -45,7 +44,7 @@ table th:first-child {
   text-align: left; 
   vertical-align: middle; 
   transform: rotate(180deg);
-  
+
 }
 th img {
     transform: rotate(180deg);
@@ -64,11 +63,12 @@ td {
   border: 1px white solid;
   text-align: left;
 
+ 
 }
 
 td:first-child{
   width:258px;
-  
+
 }
 td:not(:first-child) {
   width: 62.77px;
@@ -79,12 +79,12 @@ opacity: 0px;
 
 
   text-align: center;
-  
+
 }
 
 td.green {
   background-color: #DBF2E3;
-  
+
 }
 
 td.red {
@@ -117,13 +117,15 @@ text-align: left;
 @media screen and (max-width: 768px) {
   .Table {
     flex-direction: column; 
-    width: 100%;
+    width: 90vw;
     margin-left: 0;
     padding: 0;
     display: flex;
 border: 0;
-    max-width: 500px;
+overflow-x: scroll;
+ 
   }
+
   
   .Table th , table td {
     font-size: 12px; 
@@ -131,11 +133,12 @@ border: 0;
 
     white-space: nowrap;
   }
-  
+
   .Table th:not(:first-child) {
     transform: none;
 
     padding-bottom: 10px;
   }
+  
 
 }
