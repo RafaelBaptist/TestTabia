@@ -135,7 +135,7 @@ border: 0;
   
   .Table th:not(:first-child) {
     transform: none;
-    /* Adicione um padding-bottom para criar espaço entre as células */
+
     padding-bottom: 10px;
   }
 
