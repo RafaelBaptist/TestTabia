@@ -1,0 +1,35 @@
+.TopBar{
+    background-color: #fFF;
+    width: 100%;
+    color: #2678FF;
+     font-family: Open Sans;
+font-size: 20px;
+font-weight: 600;
+line-height: 27.24px;
+text-align: left;
+
+    display: flex;
+
+  flex: 1;
+  flex-direction: row;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0px 1px 4px 0px #BFC7D03D;
+ padding: 24px 16px;
+ box-sizing: border-box;
+
+}
+
+.TopBar > div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.hamburgerButton{
+    border-color: transparent;
+    background-color: transparent;
+padding: 0;
+
+
+}   

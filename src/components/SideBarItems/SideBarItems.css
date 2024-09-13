@@ -1,0 +1,32 @@
+.menuItem {
+    cursor: pointer;
+    gap: 16px;
+    padding: 8px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color:  #62656C;
+}
+
+.menuItem:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.primary{
+padding-left: 16px;
+
+
+}
+
+.secundary{
+  padding-left: 32px;  
+}
+
+.active{
+    border-left: 6px  #2678FF solid;
+    font-weight: 700;
+    color:  #1C1E2A; 
+}
